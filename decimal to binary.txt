@@ -28,7 +28,7 @@ int main()
     }  
   }
  
-  printf("************\n");
+  printf("\n reverse of this bits \n");
   i=i-1;
   for(j=i;j>=0;j--)
   {
