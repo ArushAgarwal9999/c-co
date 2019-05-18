@@ -1,0 +1,40 @@
+#include <stdio.h>
+ 
+int main()
+{
+  int n, c, k,i,j;
+  char str[50];
+ 
+  printf("Enter an integer in decimal number system\n");
+  scanf("%d", &n);
+ 
+  printf("%d in binary number system is:\n", n);
+  i=0;
+  for (c = 31; c >= 0; c--)
+  {
+    k = n >> c;
+ 
+    if (k & 1)
+    {
+      printf("1");
+      str[i]=49;
+      i++;
+    }  
+    else
+    {
+      printf("0");
+      str[i]=48;
+      i++;
+    }  
+  }
+ 
+  printf("************\n");
+  i=i-1;
+  for(j=i;j>=0;j--)
+  {
+      printf("%c",str[j]);
+  }
+  
+ 
+  return 0;
+}
